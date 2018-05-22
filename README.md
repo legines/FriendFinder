@@ -10,4 +10,8 @@
 - [x] Back end: Node, Express
 
 
-## How to Run
+## How the app works
+
+1. Friend Finder works by filling out a survey and matching the user with a friend.
+
+2. The app then finds who in the database is the closest to the user based on their answers.
