@@ -1,8 +1,10 @@
 var friends = require("../data/friends.js");
+var path = require("path");
+
 // console.log(friends);
 module.exports = function (app){
   //route that views friends
-  app.get("/api/friends", function(req,res){
+  app.get("/api/friends", function (req,res) {
     res.json(friends);
   });
   

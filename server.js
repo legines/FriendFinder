@@ -1,6 +1,7 @@
 var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
+var path = require("path");
 
 //require hrmlRoutes and pass in app into the module exports function
 

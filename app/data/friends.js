@@ -1,9 +1,9 @@
 // array of friends as objects
 var friends = [
   {
-    name: "Ahmed",
-    photo: "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-    scores: [
+    "name": "Ahmed",
+    "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
+    "scores": [
       "5",
       "1",
       "4",
@@ -17,9 +17,9 @@ var friends = [
     ]
   },
   {
-    name: "Johnny Sack",
-    photo: "https://en.wikipedia.org/wiki/Johnny_Sack#/media/File:JohnnySack.jpg",
-    scores: [
+    "name": "Johnny Sack",
+    "photo": "https://en.wikipedia.org/wiki/Johnny_Sack#/media/File:JohnnySack.jpg",
+    "scores": [
       "3",
       "5",
       "1",
@@ -33,9 +33,9 @@ var friends = [
     ]
   },
   {
-    name: "Silvio Dante",
-    photo: "https://vignette.wikia.nocookie.net/sopranos/images/a/a7/Silvio1.jpg/revision/latest?cb=20110422182209",
-    scores: [
+    "name": "Silvio Dante",
+    "photo": "https://vignette.wikia.nocookie.net/sopranos/images/a/a7/Silvio1.jpg/revision/latest?cb=20110422182209",
+    "scores": [
       "1",
       "2",
       "3",
@@ -49,9 +49,9 @@ var friends = [
     ]
   },
   {
-    name: "Tony Soprano",
-    photo: "https://upload.wikimedia.org/wikipedia/en/c/c2/Tony_Soprano.jpg",
-    scores: [
+    "name": "Tony Soprano",
+    "photo": "https://upload.wikimedia.org/wikipedia/en/c/c2/Tony_Soprano.jpg",
+    "scores": [
       "4",
       "3",
       "2",
@@ -65,9 +65,9 @@ var friends = [
     ]
   },
   {
-    name: "Paulie Gualtieri",
-    photo: "https://upload.wikimedia.org/wikipedia/en/d/d5/The_Sopranos_Paulie.jpg",
-    scores: [
+    "name": "Paulie Gualtieri",
+    "photo": "https://upload.wikimedia.org/wikipedia/en/d/d5/The_Sopranos_Paulie.jpg",
+    "scores": [
       "4",
       "1",
       "4",
