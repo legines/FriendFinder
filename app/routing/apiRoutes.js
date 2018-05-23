@@ -5,6 +5,7 @@ var path = require("path");
 module.exports = function (app){
   //route that views friends
   app.get("/api/friends", function (req,res) {
+    console.log("reading api..");
     res.json(friends);
   });
   
@@ -44,4 +45,4 @@ module.exports = function (app){
     // json of the best match
     res.json(bestMatch);
   });
-}
+};

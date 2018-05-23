@@ -4,11 +4,11 @@ var bodyParser = require("body-parser");
 var path = require("path");
 
 //require hrmlRoutes and pass in app into the module exports function
-
+require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes.js")(app);
 
 // require apiRoutes to view [friends]
-require("./app/routing/apiRoutes.js")(app);
+
 
 var PORT = process.env.PORT || 8080;
 
