@@ -181,7 +181,7 @@
   </div>
 
   <script type="text/javascript">
-  $(document).ready(function(){ 
+
   $("#submit").on("click", function(){
 
     function formValidation(){
@@ -199,7 +199,7 @@
       });
       return isValid;
     };
-  // if formValidation is true
+  // if the form is filled in
     if (formValidation()) {
       // object of user input
       var userData = {
@@ -218,6 +218,7 @@
           $("#q10").val()
         ]
       };
+      console.log(userData);
 
       var currentURL = window.location.origin;
       // post data to friends api
@@ -235,7 +236,7 @@
     }
       return false;
   });
-  });  
+ 
   </script>
 
 

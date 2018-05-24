@@ -1,7 +1,7 @@
 var friends = require("../data/friends.js");
-var path = require("path");
 
-// console.log(friends);
+
+
 module.exports = function (app){
   //route that views friends
   app.get("/api/friends", function (req,res) {
@@ -17,7 +17,7 @@ module.exports = function (app){
       friendDiff: 1000 //tracks the diff btw answers
     };
 
-    // get all the userDatauserData from the survey
+    // get all the user Data from the survey
     var userData = req.body;
     var userScores = userData.scores;
 
