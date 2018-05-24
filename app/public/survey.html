@@ -184,7 +184,7 @@
   $(document).ready(function(){ 
   $("#submit").on("click", function(){
 
-    function validate(){
+    function formValidation(){
       var isValid = true;
       $(".form-control").each(function(){
         if ($(this).val() === "") {
@@ -199,10 +199,10 @@
       });
       return isValid;
     };
-  // if validate is true
-    if (validate()) {
+  // if formValidation is true
+    if (formValidation()) {
       // object of user input
-      var userInput = {
+      var userData = {
         name: $("#name").val(),
         photo: $("#photo").val(),
         scores: [
@@ -221,7 +221,7 @@
 
       var currentURL = window.location.origin;
       // post data to friends api
-      $.post(currentURL + "/api/friends", userInput, function(data){
+      $.post(currentURL + "/api/friends", userData, function(data){
 
         $("#match-name").text(data.name);
         $("#match-img").attr("src", data.photo);

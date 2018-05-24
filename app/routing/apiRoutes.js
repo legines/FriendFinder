@@ -17,9 +17,9 @@ module.exports = function (app){
       friendDiff: 1000 //tracks the diff btw answers
     };
 
-    // get all the user input from the survey
-    var userInput = req.body;
-    var userScore = userInput.score;
+    // get all the userDatauserData from the survey
+    var userData = req.body;
+    var userScores = userData.scores;
 
     // calculating totalDifference btw user and [friends]
     var totalDifference = 0;
@@ -28,9 +28,9 @@ module.exports = function (app){
       // console.log(friends[i]);
       totalDifference = 0;
       // loop through scores while looping through [friends]
-      for (var j = 0; j < friends[i].score[j]; j++) {
+      for (var j = 0; j < friends[i].scores[j]; j++) {
         // difference between current user's scores against those from other users,
-        totalDifference += Math.abs(parseInt(userScore[j]) - parseInt(friends[i].score[j])); 
+        totalDifference += Math.abs(parseInt(userScores[j]) - parseInt(friends[i].scores[j])); 
 
         if (totalDifference <= bestMatch.friendDiff) {
           //conditional determines best match and sets the info to display
@@ -40,8 +40,8 @@ module.exports = function (app){
         };
       };
     };
-    // saves userInput
-    friends.push(userInput);
+    // saves userData
+    friends.push(userData);
     // json of the best match
     res.json(bestMatch);
   });
