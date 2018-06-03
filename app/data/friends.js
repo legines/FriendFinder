@@ -18,7 +18,7 @@ var friends = [
   },
   {
     name: "Johnny Sack",
-    photo: "https://en.wikipedia.org/wiki/Johnny_Sack#/media/File:JohnnySack.jpg",
+    photo: "https://upload.wikimedia.org/wikipedia/en/3/39/JohnnySack.jpg",
     scores: [
       "3",
       "5",
